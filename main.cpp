@@ -1,9 +1,7 @@
 #include <complex>
 #include <iostream>
 using namespace std;
-int main() {
 
-}
 double misol1(double x) {
     return pow(x,3);
 }
@@ -50,4 +48,80 @@ double misol12(double m) {
 }
 double misol13(double m,double a) {
     return m*a;
+}
+int main() {
+
+    while (true) {
+        int k;
+        cout<<"Topshiriq 1 dan misol raqamini kiriting:";
+        cin>>k;
+        if(k==1) {
+            double x;
+            cin>>x;
+            cout<<misol1(x)<<endl;
+        }
+        else if(k==2) {
+            double r1,r2,r3;
+            cin>>r1>>r2>>r3;
+            cout<<misol2(r1,r2,r3)<<endl;
+        }
+        else if(k==3) {
+            double S,h;
+            cin>>S>>h;
+            cout<<misol3(S,h)<<endl;
+        }
+        else if(k==4) {
+            double r;
+            cin>>r;
+            cout<<misol4(r)<<endl;
+        }
+        else if(k==5) {
+            double a,b,s;
+            cin>>a>>b>>s;
+            cout<<misol5(a,b,s)<<endl;
+        }
+        else if(k==6) {
+            double a,b,h;
+            cin>>a>>b>>h;
+            cout<<misol6(a,b,h)<<endl;
+        }
+        else if(k==7) {
+            double r,h;
+            cin>>r>>h;
+            cout<<misol7(r,h)<<endl;
+        }
+        else if(k==8) {
+            double v,s;
+            cin>>v>>s;
+            cout<<misol8(v,s)<<endl;
+        }
+        else if(k==9) {
+            double h;
+            cin>>h;
+            cout<<misol9(h)<<endl;
+        }
+        else if(k==10) {
+            double x;
+            cin>>x;
+            cout<<misol10(x)<<endl;
+        }
+        else if(k==11) {
+            double n;
+            cin>>n;
+            cout<<misol11(n)<<endl;
+        }
+        else if(k==12) {
+            double m;
+            cin>>m;
+            cout<<misol12(m)<<endl;
+        }
+        else if(k==13) {
+            double m,a;
+            cin>>m>>a;
+            cout<<misol13(m,a)<<endl;
+        }
+        else {
+            cout<<"Bunday raqamdagi misol mavjud emas"<<endl;
+        }
+    }
 }
